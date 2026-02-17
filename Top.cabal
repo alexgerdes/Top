@@ -1,25 +1,23 @@
+cabal-version:  2.0
 name:           Top
 version:        1.9
 synopsis:           Constraint solving framework employed by the Helium Compiler.
 homepage:           https://github.com/Helium4Haskell/Top
 description:
 
-  At its most general, Top is a framework for constructing abstract interpretations 
-  which focuses on giving good feedback on why an abstract interpretation does not give 
-  any useful information. In a mathematical notation this is usually made explicit by 
-  returning the top element of a (complete) lattice. This is also one of the reasons 
+  At its most general, Top is a framework for constructing abstract interpretations
+  which focuses on giving good feedback on why an abstract interpretation does not give
+  any useful information. In a mathematical notation this is usually made explicit by
+  returning the top element of a (complete) lattice. This is also one of the reasons
   for the name of the project.
 
 category:           Constraints
 copyright:          (c) 2012-2016
-license:        GPL
-license-file:       LICENSE.txt
 author:         Bastiaan Heeren, Jurriaan Hage
 maintainer:         helium4haskell@gmail.com
 stability:          provisional
 extra-source-files:     CREDITS.txt
 build-type:         Simple
-cabal-version:      2.0
 tested-with:        GHC == 9.2.5
 
 source-repository head
@@ -79,7 +77,7 @@ Executable topsolver
     Top.Util.Empty
     Top.Util.Option
     Utils
-    
+
 Library
   Build-Depends:     base >= 3 && < 5, containers, mtl
   if !impl(ghc >= 8.0)
