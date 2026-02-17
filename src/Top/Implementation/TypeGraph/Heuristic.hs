@@ -9,6 +9,7 @@
 
 module Top.Implementation.TypeGraph.Heuristic where
 
+import Control.Monad (filterM)
 import Top.Implementation.TypeGraph.ClassMonadic
 import Top.Implementation.TypeGraph.Basics
 import Top.Implementation.TypeGraph.Path

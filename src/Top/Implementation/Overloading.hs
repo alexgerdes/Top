@@ -23,6 +23,7 @@ import Top.Interface.Substitution
 import Top.Interface.Qualification
 import Top.Monad.Select
 import Top.Util.Embedding
+import Control.Monad (foldM)
 import qualified Data.Map as M
 import Data.Maybe
 import Data.List (intercalate, (\\), partition)

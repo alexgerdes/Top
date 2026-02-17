@@ -16,6 +16,7 @@ import Top.Monad.StateFix
 import Top.Interface.Basic
 import Top.Interface.Substitution
 import Top.Constraint.Information
+import Control.Monad (foldM)
 import Data.Function
 import Data.List (intersect, sortBy, partition, groupBy)
 import qualified Data.Map as M

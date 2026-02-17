@@ -15,11 +15,11 @@ module Top.Monad.StateFix
 import Control.Monad.State
 import Control.Monad.Identity
 import Control.Monad.Writer
---import Control.Applicative
+import Control.Monad (liftM, ap)
 
 type StateFix s = StateFixT s Identity
 
-data StateFixT s m a = Fix { unFix :: StateT (s (StateFixT s m)) m a }
+newtype StateFixT s m a = Fix { unFix :: StateT (s (StateFixT s m)) m a }
 
 -- To satisfy the 7.10.x proposal:
 instance Monad m => Functor (StateFixT s m) where

@@ -16,6 +16,7 @@
 module Top.Implementation.Basic where
 
 import Control.Arrow
+import Control.Monad (when)
 import Top.Constraint
 import Top.Util.Option
 import Top.Implementation.General

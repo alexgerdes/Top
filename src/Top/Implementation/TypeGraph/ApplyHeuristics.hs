@@ -9,6 +9,7 @@
 
 module Top.Implementation.TypeGraph.ApplyHeuristics (applyHeuristics, predicatePath, expandPath) where
 
+import Control.Monad (foldM)
 import Data.Graph (buildG, scc)
 import Data.List
 import Data.Function

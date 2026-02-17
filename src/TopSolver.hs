@@ -22,6 +22,7 @@ import Top.Interface.TypeInference
 import Top.Solver
 import Top.Solver.TypeGraph
 import Utils (internalError)
+import Control.Monad (void, liftM)
 import Data.Char (isDigit, isLower)
 import Data.List (intercalate, intersperse)
 import Data.Maybe

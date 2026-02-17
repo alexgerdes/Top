@@ -16,6 +16,7 @@ import Top.Monad.Select
 import Top.Monad.StateFix
 import Utils (internalError)
 
+import Control.Monad (filterM, liftM, unless, when)
 ------------------------------------------------------------------------
 -- (I)  Class name and (dedicated) deselect function
     
